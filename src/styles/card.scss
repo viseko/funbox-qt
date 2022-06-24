@@ -1,0 +1,61 @@
+$border-style: 4px solid var(--border-color);
+$image-height: 265px;
+$border-radius: 12px;
+
+@import "card/main";
+@import "card/title";
+@import "card/type";
+@import "card/name";
+@import "card/sort";
+@import "card/details";
+@import "card/image";
+@import "card/weight";
+@import "card/bottom";
+
+.card {
+  --border-color: #{$cl-blue};
+
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.card--hover {
+  --border-color: #{$cl-blue-hover};
+
+  .card__bottom label {
+    color: $cl-blue-hover;
+  }
+}
+
+.card--selected {
+  --border-color: #{$cl-pink};
+}
+
+.card--selected-hover {
+  --border-color: #{$cl-pink-hover};
+
+  .card__type {
+    color: $cl-pink-hover;
+  }
+}
+
+.card--disabled {
+  --border-color: #{$cl-silver};
+
+  .card__main {
+    color: $cl-silver;
+  }
+
+  .card__bottom {
+    color: $cl-yellow;
+  }
+
+  .card__image {
+    opacity: 0.5;
+  }
+
+  label {
+    cursor: default;
+  }
+}

@@ -1,0 +1,12 @@
+.card__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $image-height;
+  border-radius: 8px;
+  background-image: url("../../img/cat.png");
+  background-size: 260px $image-height;
+  background-repeat: no-repeat;
+  background-position: -5px 0;
+}

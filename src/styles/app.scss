@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app__title {
+  margin-bottom: 25px;
+  font-family: $font-exo2;
+  font-weight: thin;
+  font-size: 34px;
+  text-align: center;
+}

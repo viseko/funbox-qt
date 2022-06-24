@@ -1,0 +1,12 @@
+.card__bottom {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+
+  label {
+    color: $cl-blue;
+    border-bottom: 1px dashed $cl-blue;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}
