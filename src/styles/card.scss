@@ -1,4 +1,4 @@
-$border-style: 4px solid var(--border-color);
+$border-style: 4px solid $cl-blue;
 $image-height: 265px;
 $border-radius: 12px;
 
@@ -21,7 +21,15 @@ $border-radius: 12px;
 }
 
 .card--hover {
-  --border-color: #{$cl-blue-hover};
+  .card__main,
+  .card__main::after,
+  .card__main::before {
+    border-color: $cl-blue-hover;
+  }
+
+  .card__weight {
+    background-color: $cl-blue-hover;
+  }
 
   .card__bottom label {
     color: $cl-blue-hover;
@@ -29,22 +37,46 @@ $border-radius: 12px;
 }
 
 .card--selected {
-  --border-color: #{$cl-pink};
+  .card__main,
+  .card__main::after,
+  .card__main::before {
+    border-color: $cl-pink;
+  }
+
+  .card__weight {
+    background-color: $cl-pink;
+  }
 }
 
 .card--selected-hover {
-  --border-color: #{$cl-pink-hover};
+  .card__main,
+  .card__main::after,
+  .card__main::before {
+    border-color: $cl-pink-hover;
+  }
 
   .card__type {
     color: $cl-pink-hover;
   }
+
+  .card__weight {
+    background-color: $cl-pink-hover;
+  }
 }
 
 .card--disabled {
-  --border-color: #{$cl-silver};
-
   .card__main {
     color: $cl-silver;
+  }
+
+  .card__main,
+  .card__main::after,
+  .card__main::before {
+    border-color: $cl-silver;
+  }
+
+  .card__weight {
+    background-color: $cl-silver;
   }
 
   .card__bottom {

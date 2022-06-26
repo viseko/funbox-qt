@@ -21,9 +21,10 @@
   }
 
   &::before {
-    top: -44px;
+    top: -43px;
     right: -4px;
     height: 44px;
+    z-index: 1;
     width: calc(100% - 36px);
     background-color: inherit;
     border: $border-style;
@@ -33,14 +34,14 @@
   }
 
   &::after {
-    top: -44px;
+    top: -43px;
     left: 18px;
-    width: 48px;
+    width: 50px;
     height: 44px;
     background: #fff;
     border: $border-style;
-    border-bottom: 0;
     border-right: 0;
+    border-bottom: 0;
     transform: skew(-45deg);
   }
 }
