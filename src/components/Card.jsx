@@ -16,7 +16,7 @@ const Card = ({data, className}) => {
   } = data;
 
   const [status, setStatus] = useState('default'); // default | selected | disabled
-  const [classNames, setClassNames] = useState([className, 'card'].join(" "));
+  const [classNames, setClassNames] = useState([className, 'card'].join(' '));
   const [isHover, setIsHover] = useState(false);
   const [isJustSelected, setIsJustSelected] = useState(false);
 
@@ -70,7 +70,7 @@ const Card = ({data, className}) => {
 
   const getMousesRow = () => {
     const num = (mouses > 1) ? <strong>{`${mouses} `}</strong> : null;
-    const word = declOfNum(mouses, ["мышь", "мыши", "мышей"]) + " в подарок";
+    const word = declOfNum(mouses, ['мышь', 'мыши', 'мышей']) + ' в подарок';
     return (
       <li>
         {num}{word}
@@ -80,7 +80,7 @@ const Card = ({data, className}) => {
 
   const getPortionsRow = () => {
     const num = (portions > 1) ? <strong>{`${portions} `}</strong> : null;
-    const word = declOfNum(portions, ["одна порция", "порции", "порций"]);
+    const word = declOfNum(portions, ['одна порция', 'порции', 'порций']);
     return (
       <li>
         {num}{word}
@@ -135,11 +135,11 @@ const Card = ({data, className}) => {
           }
         </ul>
 
-        <div className="card__image"></div>
+        <div className='card__image'></div>
 
         <div className='card__weight'>
           <span className='card__weight-number'>
-            {weight.toString().replace(".", ",")}
+            {weight.toString().replace('.', ',')}
           </span>
           кг
         </div>

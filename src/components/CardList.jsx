@@ -6,7 +6,11 @@ const CardList = ({data}) => {
     <div className='card-list'>
       {
         data.map((cardData, i) =>
-          <Card className="card-list__card" key={i} data={cardData} />
+          <Card
+            className='card-list__card'
+            key={i}
+            data={cardData}
+          />
         )
       }
     </div>
