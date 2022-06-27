@@ -10,7 +10,7 @@ const Card = ({data, className}) => {
   const [isHover, setIsHover] = useState(false);
   const [isJustSelected, setIsJustSelected] = useState(false);
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     setStatus(status === 'default' ? 'selected' : 'default');
     
     setIsJustSelected(true);
