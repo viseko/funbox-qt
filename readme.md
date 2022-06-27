@@ -2,7 +2,7 @@
 Для вакансии "Junior Frontend разработчик" компании FunBox
 
 ## Демо
-(https://viseko.github.io/funbox-qt)[https://viseko.github.io/funbox-qt]
+https://viseko.github.io/funbox-qt
 
 ## Task requirements
 1. Фон занимает всю площадь экрана, блок находится по центру вертикально и горизонтально. 
