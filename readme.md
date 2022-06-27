@@ -21,5 +21,5 @@ https://viseko.github.io/funbox-qt
 ## npm scripts
  - `npm i` - установка зависимостей
 - `npm start` - запуск dev-mode
-- `npm build` - сборка проекта
-- `npm deploy` - деплой сборки на GitHub Pages
+- `npm run build` - сборка проекта
+- `npm run deploy` - деплой сборки на GitHub Pages
